@@ -22,7 +22,7 @@ sudo chsh -s /usr/local/bin/bash $USER
 brew install bash-completion
 
 # Ack is great for searching for things within a repo.
-brew install ack
+# brew install ack
 
 # The Silver Searcher (ag) is similar to Ack, newer and possibly better, but I still prefer Ack.
 brew install the_silver_searcher
@@ -31,9 +31,9 @@ brew install the_silver_searcher
 brew install wget
 
 # HTop is a really nice replacement for top.
-brew install htop
-sudo chown root:wheel /usr/local/Cellar/htop-osx/*/bin/htop
-sudo chmod u+s /usr/local/Cellar/htop-osx/*/bin/htop
+# brew install htop
+# sudo chown root:wheel /usr/local/Cellar/htop-osx/*/bin/htop
+# sudo chmod u+s /usr/local/Cellar/htop-osx/*/bin/htop
 
 # This is a little utility missing from Mac OS X, but common to all other OpenSSH installations.
 brew install ssh-copy-id
@@ -61,8 +61,8 @@ brew install pv
 brew install midnight-commander
 
 # NcFTP and LFTP provide some useful features (bookmarks, resume, mirroring) that other FTP clients don't.
-brew install ncftp
-brew install lftp
+# brew install ncftp
+# brew install lftp
 
 # NMap is a network tool for port scanning, network mapping, remote OS detection, firewall detection, and more.
 brew install nmap
@@ -73,7 +73,7 @@ sudo chown root:wheel /usr/local/Cellar/iftop/*/sbin/iftop
 sudo chmod u+s /usr/local/Cellar/iftop/*/sbin/iftop
 
 # Rsnapshot uses rsync to take snapshots of file systems to make remote incremental backups.
-brew install rsnapshot
+# brew install rsnapshot
 
 # Tcpflow is like tcpdump, but shows TCP-layer streams instead of packets.
 brew install tcpflow
@@ -86,20 +86,20 @@ brew install flac
 brew install unrar
 
 # It's nice to occasionally show a fortune.
-brew install fortune
+# brew install fortune
 
 # Siege is an HTTP benchmarking tool.
-brew install siege
+# brew install siege
 
 # Install some newer tools that Mac OS X already has.
-brew install homebrew/dupes/diffutils
-brew install colordiff
-brew install homebrew/dupes/nano
-brew install homebrew/dupes/grep
-brew install homebrew/dupes/less
-brew install homebrew/dupes/
-brew install homebrew/dupes/
-brew install homebrew/dupes/
+# brew install homebrew/dupes/diffutils
+# brew install colordiff
+# brew install homebrew/dupes/nano
+# brew install homebrew/dupes/grep
+# brew install homebrew/dupes/less
+# brew install homebrew/dupes/
+# brew install homebrew/dupes/
+# brew install homebrew/dupes/
 
 
 ## From https://github.com/ptb/Mac-OS-X-Lion-Setup/blob/master/setup.sh
@@ -162,7 +162,7 @@ sudo pmset -c panicrestart 15
 defaults write com.apple.BezelServices 'kDim' -bool true
 
 ### Turn off when computer is not used for: 5 mins
-defaults write com.apple.BezelServices 'kDimTime' -int 300
+# defaults write com.apple.BezelServices 'kDimTime' -int 300
 
 
 
@@ -186,7 +186,7 @@ fi
 ## System Preferences > Users & Groups
 
 ### Login Options > Display login window as: Name and password
-sudo defaults write /Library/Preferences/com.apple.loginwindow 'SHOWFULLNAME' -bool true
+# sudo defaults write /Library/Preferences/com.apple.loginwindow 'SHOWFULLNAME' -bool true
 
 
 ## System Preferences > Date & Time > Clock
@@ -198,11 +198,11 @@ defaults write com.apple.menuextra.clock 'DateFormat' -string 'EEE MMM d   h:mm:
 
 
 # F.lux changes the color temperature of your screen to match the time of day.
-brew cask install flux
+# brew cask install flux
 
 # Qt is a cross-platform UI toolkit.
-brew install qt
-brew install qt5
+# brew install qt
+# brew install qt5
 
 ## We'll use the Homebrew version of git, so we get the latest versions.
 ## This was especially important for the CVE-2014-9390 vulnerability.

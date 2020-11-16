@@ -20,7 +20,7 @@
 
 
 # Don't bother with the "desktop" behind all our windows. From http://lifehacker.com/hide-and-show-desktop-icons-on-os-x-with-an-automator-s-5704241
-defaults write com.apple.finder CreateDesktop false
+# defaults write com.apple.finder CreateDesktop false
 
 # Allow quitting Finder.
 defaults write com.apple.finder QuitMenuItem -bool true
@@ -59,7 +59,7 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 defaults write com.apple.finder WarnOnEmptyTrash -bool true
 
 # Empty Trash securely by default.
-defaults write com.apple.finder EmptyTrashSecurely -bool true
+# defaults write com.apple.finder EmptyTrashSecurely -bool true
 
 # Use list view in all Finder windows by default. Other view modes: 'icnv', 'clmv', 'Flwv'.
 defaults write com.apple.finder FXPreferredViewStyle -string 'Nlsv'
@@ -77,8 +77,8 @@ defaults write ShowRemovableMediaOnDesktop -bool false
 defaults write ShowMountedServersOnDesktop -bool false
 
 # Enable spring loading for directories, with no delay.
-defaults write NSGlobalDomain com.apple.springing.enabled -bool true
-defaults write NSGlobalDomain com.apple.springing.delay -float 0
+# defaults write NSGlobalDomain com.apple.springing.enabled -bool true
+# defaults write NSGlobalDomain com.apple.springing.delay -float 0
 
 # Enable Sharing & Permissions section in Info panels for files and directories.
 defaults write com.apple.finder FXInfoPanesExpanded -dict Privileges -bool false
@@ -88,7 +88,7 @@ defaults write com.apple.finder ShowSidebar -bool true
 defaults write com.apple.finder ShowRecentTags -bool false
 
 # Save screen captures in `Pictures` instead of `Desktop`.
-defaults write com.apple.screencapture location ~/Pictures
+# defaults write com.apple.screencapture location ~/Pictures
 killall SystemUIServer
 
 
